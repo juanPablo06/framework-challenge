@@ -1,0 +1,79 @@
+/* Title ======= */
+
+.main-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-weight: 700;
+  font-size: 2rem;
+
+  margin: 7rem;
+}
+
+h1:hover,
+h2:hover {
+  color: var(--white);
+  transition: color 0.2s;
+}
+
+/* BUTTON's ======== */
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin-bottom: 15rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  width: 20rem;
+  height: 5rem;
+  margin: 0.2rem;
+  padding: 0.5rem;
+
+  background-color: var(--mandarin);
+  color: var(--light-grey);
+
+  border: 1px solid grey;
+  border-radius: 0.5rem;
+
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: var(--vermillion);
+  color: var(--white);
+}
+
+img {
+  width: 1.5rem;
+  margin: 0.7rem;
+}
+
+/* Footer =========== */
+
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  .btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+
+    margin-top: 10rem;
+  }
+}

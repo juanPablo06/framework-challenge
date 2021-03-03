@@ -1,0 +1,217 @@
+/* Header ======= */
+
+header {
+  width: 100vw;
+  height: 7rem;
+  border-bottom: 5px solid black;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h1,
+h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  font-weight: 700;
+}
+
+h1:hover,
+h2:hover {
+  color: var(--white);
+  transition: color 0.2s;
+}
+
+/* Main ========= */
+
+.container {
+  background-color: var(--white);
+  width: 100vw;
+  height: 48.5rem;
+  margin: auto;
+
+  overflow: hidden;
+}
+
+/* Buttons ======= */
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  margin-bottom: 1rem;
+}
+
+.btn-container > a > button,
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+  width: 6rem;
+  height: 5rem;
+  margin: 0.7rem 0.7rem;
+  padding: 0.2rem;
+
+  background-color: var(--mandarin);
+  color: var(--white);
+
+  font-weight: 400;
+  font-size: 1rem;
+
+  border: 1px solid grey;
+  border-radius: 0.9rem;
+
+  transition: background-color 0.2s;
+}
+
+.btn-container > a > button:hover {
+  background-color: var(--vermillion);
+}
+
+button:disabled {
+  background-color: var(--vermillion);
+  cursor: not-allowed;
+}
+
+.menu-button {
+  width: 5rem;
+  height: 3rem;
+  margin: 1rem;
+
+  background-color: var(--cyber-grape);
+  color: var(--light-grey);
+
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.menu-button:hover {
+  background-color: var(--mandarin);
+  color: var(--white);
+  transition: background-color 0.3s;
+}
+
+img {
+  width: 1.5rem;
+  margin: 0.7rem;
+}
+
+/* Table ======== */
+
+.table-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+#posts-table {
+  width: min(70vw);
+  height: 60vh;
+
+  border-spacing: 0 0.5rem;
+  color: var(--cyber-grape);
+
+  display: block;
+}
+
+table thead tr th:first-child,
+table tbody tr td:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+
+table thead tr th:last-child,
+table tbody tr td:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+}
+
+table thead th {
+  background: var(--light-grey);
+  font-weight: normal;
+  padding: 1rem 2rem;
+
+  text-align: left;
+}
+
+table tbody tr {
+  opacity: 0.7;
+}
+
+table tbody tr:hover {
+  opacity: 1;
+  transition: 300ms;
+}
+
+table tbody td {
+  background: var(--light-grey);
+  padding: 1rem 2rem;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 1rem;
+  border-top: 2px solid black;
+}
+
+@media (max-height: 640px) {
+  .container {
+    height: 50rem;
+  }
+}
+
+@media (min-widht: 800px) {
+  #posts-table {
+    margin-left: none;
+  }
+}
+
+/*
+@media (min-width: 1800px) {
+  #posts-table {
+    margin-left: 400px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 1800px) {
+  #posts-table {
+    margin-left: 300px;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1700px) {
+  #posts-table {
+    margin-left: 200px;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1500px) {
+  #posts-table {
+    margin-left: 100px;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1350px) {
+  #posts-table {
+    margin-left: 50px;
+  }
+}
+
+*/
